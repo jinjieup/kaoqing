@@ -61,6 +61,20 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            id="mail_address"
+            class="form-control"
+            placeholder="（必填）请输入数据接收邮箱"
+            aria-label="data recieve mail address"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="container" style="margin-bottom: 5px">
       <select
         class="form-select form-select-lg"
@@ -77,18 +91,30 @@
     <div class="container" style="margin-bottom: 1rem">
       <div class="row">
         <div class="col-4">
-          <select class="form-select form-select mb-3" id="name_EN_select_list" onclick="load_name()">
+          <select
+            class="form-select form-select mb-3"
+            id="name_EN_select_list"
+            onclick="load_name()"
+          >
             <option selected disabled>首字母</option>
           </select>
         </div>
         <div class="col-8">
-          <select class="form-select form-select mb-3" id="name_select_list" onclick="name_list_load()">
+          <select
+            class="form-select form-select mb-3"
+            id="name_select_list"
+            onclick="name_list_load()"
+          >
             <option selected disabled>学生姓名</option>
           </select>
         </div>
       </div>
       <div class="container">
-        <button class="btn btn-outline-success" style="width: 100%; margin: auto;" onclick="search_student()">
+        <button
+          class="btn btn-outline-success"
+          style="width: 100%; margin: auto"
+          onclick="search_student()"
+        >
           搜索
         </button>
       </div>
